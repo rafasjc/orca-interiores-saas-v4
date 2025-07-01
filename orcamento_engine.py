@@ -196,7 +196,10 @@ class OrcamentoEngine:
                 color=custos,
                 color_continuous_scale='viridis'
             )
-            fig_barras.update_xaxis(tickangle=45)
+            fig_barras.update_layout(
+    xaxis={'tickangle': 45},
+    xaxis_title="Componentes",
+    yaxis_title="Custo (R$)"
         else:
             fig_barras = None
         
